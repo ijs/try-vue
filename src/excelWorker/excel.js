@@ -3,6 +3,10 @@ import XLSX from 'xlsx';
 export function workBookToJSON(workbook) {
   const result = workbook.SheetNames.reduce(function(acc, sheetName, index) {
     const sheet = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+    sheet.map((x, idx) => {
+      x.key = idx
+      return x
+    })
     if (sheet.length) {
       acc[index] = sheet;
     }

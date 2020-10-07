@@ -28,7 +28,7 @@
       excelWorker.worker.onmessage = event => {
         this.excelData = JSON.parse(event.data)
         if (this.excelData[0] && this.excelData[0][0]) {
-          this.columns = Object.keys(this.excelData[0][0]).map(x => ({title: x, key: x, dataIndex: x}))
+          this.columns = Object.keys(this.excelData[0][0]).filter(x => x !== 'key').map(x => ({title: x, key: x, dataIndex: x}))
           this.data = this.excelData[0]
         }
         this.time = (Date.now() - this.start) / 1000
