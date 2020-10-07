@@ -26,12 +26,10 @@ export default {
   },
   created() {
     excelWorker.worker.onmessage = event => {
-      console.log('data', event.data)
       this.excelData = JSON.parse(event.data)
       if (this.excelData[0] && this.excelData[0][0]) {
         this.columns = Object.keys(this.excelData[0][0]).map(x => ({title: x, key: x, dataIndex: x}))
         this.data = this.excelData[0]
-        console.log(this.columns)
       }
       this.time = (Date.now() - this.start) / 1000
     }
