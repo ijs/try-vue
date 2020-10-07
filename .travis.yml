@@ -18,4 +18,4 @@ deploy:
   target-branch: master
   verbose: true
   on:
-    branch: master
+    branch: gh-pages
