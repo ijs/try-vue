@@ -1,24 +1,33 @@
-# try-vue-feature
+# 介绍
+![build](https://api.travis-ci.com/ijs/try-vue.svg?branch=master&status=passed)
 
-## Project setup
+记录一些实践性的功能, 仅用作交流和参考.
+
+## 背景
+
+## 功能列表
+
+- [Web Worker解析 Excel](https://ijs.github.io/try-vue/#/excel)
+
+## 项目启动
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 本地调试
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### 线上打包
 ```
 yarn build
 ```
 
-### Lints and fixes files
+### 代码 lint
 ```
 yarn lint
 ```
 
-### Customize configuration
+### vue config 配置
 See [Configuration Reference](https://cli.vuejs.org/config/).
