@@ -1,6 +1,7 @@
 import XLSX from 'xlsx';
 // excel read json
 export function workBookToJSON(workbook) {
+  console.time('start')
   const result = workbook.SheetNames.reduce(function(acc, sheetName, index) {
     const sheet = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
     sheet.map((x, idx) => {
@@ -13,6 +14,8 @@ export function workBookToJSON(workbook) {
 
     return acc;
   }, []);
-
-  return JSON.stringify(result, 2, 2);
+  console.timeEnd('start')
+  console.log('result',result)
+  // return JSON.stringify(result, 2, 2);
+  return result
 }
