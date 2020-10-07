@@ -20,6 +20,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "vue-router": "^3.4.5",
     "vue-template-compiler": "^2.6.10",
     "worker-loader": "^3.0.3",
     "worker-plugin": "^5.0.0",

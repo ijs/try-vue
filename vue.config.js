@@ -1,4 +1,5 @@
 const WorkerPlugin = require('worker-plugin')
+const path = require('path')
 module.exports = {
   configureWebpack: {
     publicPath: '/try-vue/',
@@ -7,6 +8,9 @@ module.exports = {
     },
     plugins: [
       new WorkerPlugin()
-    ]
+    ],
+    alias: {
+      '@': path.resolve(process.cwd(), 'src')
+    }
   },
 }
