@@ -10,6 +10,8 @@
   "dependencies": {
     "@vue/composition-api": "^1.0.0-beta.15",
     "core-js": "^2.6.5",
+    "lru-cache": "^10.1.0",
+    "postcss-loader": "4.x",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -17,9 +19,12 @@
     "@vue/cli-plugin-eslint": "^3.12.0",
     "@vue/cli-service": "^3.12.0",
     "ant-design-vue": "^1.6.5",
+    "autoprefixer": "^10.4.16",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "postcss": "8.x",
+    "tailwindcss": "^3.4.1",
     "vue-router": "^3.4.5",
     "vue-template-compiler": "^2.6.10",
     "worker-loader": "^3.0.3",

@@ -6,6 +6,13 @@ export default {
     },
     component: () => import('../components/excel/index.vue')
   },
+  '/fetch': {
+    name: 'fetch',
+    meta: {
+      title: '使用Web Worker读取Fetch数据, 清洗, 共享'
+    },
+    component: () => import('../components/fetch/index.vue')
+  },
   '/broadcast': {
     name: 'broadcast',
     meta: {
